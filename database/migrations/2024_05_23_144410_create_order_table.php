@@ -14,11 +14,12 @@ return new class extends Migration
         Schema::create('order', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('AcountID')->nullable();
-            $table->unsignedBigInteger('OrderDetailID')->nullable();
             $table->date('date');
             $table->string('method');
             $table->boolean('status')->default(true);
             $table->timestamps();
+
+            $table->foreign('AcountID')->references('id')->on('acounts')->onDelete('cascade');
         });
     }
 

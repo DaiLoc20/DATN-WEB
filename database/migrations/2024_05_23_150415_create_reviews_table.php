@@ -19,6 +19,9 @@ return new class extends Migration
             $table->date('date');
             $table->string('starnumber');
             $table->timestamps();
+
+            $table->foreign('AcountID')->references('id')->on('acounts')->onDelete('cascade');
+            $table->foreign('ProductID')->references('id')->on('products')->onDelete('cascade');
         });
     }
 

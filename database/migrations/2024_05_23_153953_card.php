@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('AcountID')->nullable();
             $table->unsignedBigInteger('ProductDetaillsID')->nullable();
+            $table->integer('quantity');
             $table->timestamps();
 
+            $table->foreign('AcountID')->references('id')->on('acounts')->onDelete('cascade');
             $table->foreign('ProductDetaillsID')->references('id')->on('product_detaills')->onDelete('cascade');
         });
     }
