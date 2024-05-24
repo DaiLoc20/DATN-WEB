@@ -145,5 +145,95 @@ class ProductSeeder extends Seeder
             'CategoryID' =>  $CategoryPC->id,
             'BrandID' => $BrandVGAADM->id,
         ]);
+
+        Product::create([
+
+            'name' => 'Laptop Acer Aspire 3 A315 59 381E',
+            'price' => 9490000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryLaptop->id,
+            'BrandID' => $BrandACER->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Laptop ASUS Vivobook 14 X1404ZA NK386W',
+            'price' => 9890000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryLaptop->id,
+            'BrandID' => $BrandASUS->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Laptop ASUS Vivobook X1504ZA NJ582W',
+            'price' => 9990000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryLaptop->id,
+            'BrandID' => $BrandASUS->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Laptop HP 15s-fq5231TU',
+            'price' => 11900000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryLaptop->id,
+            'BrandID' => $BrandHP->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Laptop Asus Vivobook X1605VA MB105W',
+            'price' => 14890000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryLaptop->id,
+            'BrandID' => $BrandASUS->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Laptop Acer Nitro V 15 ANV15 51 58AN',
+            'price' => 18790000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryLaptop->id,
+            'BrandID' => $BrandACER->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Laptop Gaming Lenovo Legion 5 R7000 APH9',
+            'price' => 24990000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryLaptop->id,
+            'BrandID' => $BrandLENOVO->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Laptop Gaming Lenovo LOQ 15IRX9 83DV0092VN',
+            'price' => 31449000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryLaptop->id,
+            'BrandID' => $BrandLENOVO->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Laptop Gaming ASUS ROG Strix G16 G614JU N3135W',
+            'price' => 31890000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryLaptop->id,
+            'BrandID' => $BrandASUS->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Laptop Gaming Lenovo Legion 7 16IRX9 - White',
+            'price' => 63490000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryLaptop->id,
+            'BrandID' => $BrandLENOVO->id,
+        ]);
     }
 }
