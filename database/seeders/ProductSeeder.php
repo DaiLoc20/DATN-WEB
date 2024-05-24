@@ -41,6 +41,9 @@ class ProductSeeder extends Seeder
         $BrandCOLORFUL = Brand::where('name','COLORFUL')->first();
         $BrandVGANVIDI = Brand::where('name','VGA NVIDIA')->first();
         $BrandVGAADM = Brand::where('name','VGA ADM')->first();
+        $BrandVIEWSONIC = Brand::where('name','VIEWSONIC')->first();
+        $BrandAOC = Brand::where('name','AOC')->first();
+
 
 
 
@@ -234,6 +237,96 @@ class ProductSeeder extends Seeder
             'image' => ' ',
             'CategoryID' =>$CategoryLaptop->id,
             'BrandID' => $BrandLENOVO->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Màn hình Gaming Asus VA24EHF',
+            'price' => 2350000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryMan->id,
+            'BrandID' => $BrandASUS->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Màn hình 27 inch Asus VA27EHF',
+            'price' => 2950000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryMan->id,
+            'BrandID' => $BrandASUS->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Màn Hình 27 inch Viewsonic VX2718-P-MHD',
+            'price' => 3580000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryMan->id,
+            'BrandID' => $BrandVIEWSONIC->id,
+        ]);
+        
+        Product::create([
+
+            'name' => 'Màn Hình Gaming Viewsonic VX2719-PC-MHD',
+            'price' => 4340000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryMan->id,
+            'BrandID' => $BrandVIEWSONIC->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Màn Hình Gaming Asus VG27VQ',
+            'price' => 4850000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryMan->id,
+            'BrandID' => $BrandASUS->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Màn hình AOC 27G2SP/74',
+            'price' => 4480000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryMan->id,
+            'BrandID' => $BrandAOC->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Màn hình AOC 27B3CA2/74',
+            'price' => 3990000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryMan->id,
+            'BrandID' => $BrandAOC->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Màn hình 27 inch AOC Agon Pro PD27S/74',
+            'price' => 8590000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryMan->id,
+            'BrandID' => $BrandAOC->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Màn Hình LCD 24 inch Dell S2422HZ',
+            'price' => 3990000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryMan->id,
+            'BrandID' => $BrandDELL->id,
+        ]);
+
+        Product::create([
+
+            'name' => 'Màn hình đồ hoạ Dell Ultrasharp U2424H',
+            'price' => 5670000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryMan->id,
+            'BrandID' => $BrandDELL->id,
         ]);
     }
 }
