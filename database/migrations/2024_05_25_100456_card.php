@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('cards', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('AcountID')->nullable();
+            $table->unsignedBigInteger('UserID')->nullable();
             $table->unsignedBigInteger('ProductDetaillsID')->nullable();
             $table->integer('quantity');
             $table->timestamps();
 
-            $table->foreign('AcountID')->references('id')->on('acounts')->onDelete('cascade');
+            $table->foreign('UserID')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('ProductDetaillsID')->references('id')->on('product_detaills')->onDelete('cascade');
         });
     }

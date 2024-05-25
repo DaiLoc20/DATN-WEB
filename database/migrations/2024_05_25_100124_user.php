@@ -1,4 +1,3 @@
-
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -14,14 +13,16 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
+            $table->string('name',50);
+            $table->string('phone');
+            $table->string('address');
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password',100);
             $table->rememberToken();
+
+            $table->boolean('status')->default(true);
             $table->timestamps();
         });
-
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
             $table->string('token');

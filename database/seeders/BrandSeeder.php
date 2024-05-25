@@ -32,5 +32,8 @@ class BrandSeeder extends Seeder
       Brand::create(['name'=>'VGA ADM']);
       Brand::create(['name'=>'VIEWSONIC']);
       Brand::create(['name'=>'AOC']);
+      Brand::create(['name'=>'E-Dra']);
+      Brand::create(['name'=>'VSP']);
+      Brand::create(['name'=>'AMD']);
     }
 }
