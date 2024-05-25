@@ -265,7 +265,7 @@ class ProductSeeder extends Seeder
             'CategoryID' =>$CategoryMan->id,
             'BrandID' => $BrandVIEWSONIC->id,
         ]);
-        
+
         Product::create([
 
             'name' => 'Màn Hình Gaming Viewsonic VX2719-PC-MHD',
