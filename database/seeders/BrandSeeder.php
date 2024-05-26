@@ -23,13 +23,17 @@ class BrandSeeder extends Seeder
       Brand::create(['name'=>'KINGMAX']);
       Brand::create(['name'=>'KINGSTON']);
       Brand::create(['name'=>'KINGFAST']);
+      Brand::create(['name'=>'KINGMASTER']);
       Brand::create(['name'=>'INTEL']);
       Brand::create(['name'=>'SAMSUNG']);
       Brand::create(['name'=>'ADATA']);
       Brand::create(['name'=>'CORSAIR']);
       Brand::create(['name'=>'COLORFUL']);
+      Brand::create(['name'=>'COOLMOON']);
+      Brand::create(['name'=>'LianLiStrimer']);
       Brand::create(['name'=>'VGA NVIDIA']);
       Brand::create(['name'=>'VGA ADM']);
+      Brand::create(['name'=>'VGA']);
       Brand::create(['name'=>'VIEWSONIC']);
       Brand::create(['name'=>'AOC']);
       Brand::create(['name'=>'E-Dra']);
@@ -37,6 +41,7 @@ class BrandSeeder extends Seeder
       Brand::create(['name'=>'AMD']);
       Brand::create(['name'=>'WESTERN']);
       Brand::create(['name'=>'ASROCK']);
+      Brand::create(['name'=>'TENDA']);
       Brand::create(['name'=>'XIGMATEK']);
       Brand::create(['name'=>'REDMOON']);
       Brand::create(['name'=>'COOLER MASTER']);

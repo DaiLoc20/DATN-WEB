@@ -41,7 +41,7 @@ class ProductSeeder extends Seeder
 
         $CategoryPH = Category::where('name','Phím')->first();
         $CategoryCH = Category::where('name','Chuột')->first();
-        $CategoryTN = Category::where('name',' Tai Nghe')->first();
+        $CategoryTN = Category::where('name','Tai Nghe')->first();
 
         $CategoryGHE = Category::where('name','Ghế Gaming')->first();
         //Category
@@ -81,9 +81,19 @@ class ProductSeeder extends Seeder
         $BrandLOGITECH = Brand::where('name','Logitech')->first();
         $BrandFUHLEN = Brand::where('name','Fuhlen')->first();
         $BrandRAZER = Brand::where('name','Razer')->first();
-        //Brand
-        Product::create([
 
+        $BrandCOOLMOON = Brand::where('name','COOLMOON')->first();
+        $BrandLLS = Brand::where('name','LianLiStrimer')->first();
+        $BrandVGA = Brand::where('name','VGA')->first();
+        $BrandKINGMASTER = Brand::where('name','KINGMASTER')->first();
+        $BrandTENDA = Brand::where('name','TENDA')->first();
+        //Brand
+
+
+        //Fillter
+
+        //Fillter
+        Product::create([
             'name' => 'PC Gaming STAR CHICKEN MINI',
             'price' => 6990000,
             'image' => ' ',
@@ -93,7 +103,6 @@ class ProductSeeder extends Seeder
 
 
         Product::create([
-
             'name' => 'PC Gaming STAR CHICKEN PLUS WHITE',
             'price' => 10195000,
             'image' => ' ',
@@ -102,7 +111,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'PC Gaming STAR CYPHER',
             'price' => 11490000,
             'image' => ' ',
@@ -111,7 +119,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'PC Gaming STAR CHICKEN ASSASSIN',
             'price' => 11770000,
             'image' => ' ',
@@ -120,7 +127,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'PC Gaming STAR CHICKEN PLUS',
             'price' => 12900000,
             'image' => ' ',
@@ -129,7 +135,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'PC Gaming STAR CHICKEN AKIRA',
             'price' => 12900000,
             'image' => ' ',
@@ -139,7 +144,6 @@ class ProductSeeder extends Seeder
 
 
         Product::create([
-
             'name' => 'PC Gaming STAR RELAW',
             'price' => 15495000,
             'image' => ' ',
@@ -149,7 +153,6 @@ class ProductSeeder extends Seeder
 
 
         Product::create([
-
             'name' => 'PC Gaming STAR CHICKEN AQUA',
             'price' => 20240000,
             'image' => ' ',
@@ -158,7 +161,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'PC Gaming STAR JETT',
             'price' => 2495000,
             'image' => ' ',
@@ -167,7 +169,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'PC Gaming STAR ZERO TO HERO',
             'price' => 27660000,
             'image' => ' ',
@@ -176,7 +177,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'PC Gaming STAR CHICKEN SUPER LUCE',
             'price' => 12980000,
             'image' => ' ',
@@ -185,7 +185,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'Laptop Acer Aspire 3 A315 59 381E',
             'price' => 9490000,
             'image' => ' ',
@@ -194,7 +193,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'Laptop ASUS Vivobook 14 X1404ZA NK386W',
             'price' => 9890000,
             'image' => ' ',
@@ -203,7 +201,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'Laptop ASUS Vivobook X1504ZA NJ582W',
             'price' => 9990000,
             'image' => ' ',
@@ -300,7 +297,7 @@ class ProductSeeder extends Seeder
             'CategoryID' =>$CategoryMan->id,
             'BrandID' => $BrandVIEWSONIC->id,
         ]);
-        
+
         Product::create([
 
             'name' => 'Màn Hình Gaming Viewsonic VX2719-PC-MHD',
@@ -959,16 +956,13 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'Chuột Gaming không dây Rapoo VT950S Black',
             'price' => 1390000,
             'image' => ' ',
             'CategoryID' =>$CategoryCH->id,
             'BrandID' => $BrandRAPOO->id,
         ]);
-
         Product::create([
-
             'name' => 'Tai nghe Gaming Fuhlen H5',
             'price' => 210000,
             'image' => ' ',
@@ -977,7 +971,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'Tai nghe Gaming Dare-U EH406',
             'price' => 290000,
             'image' => ' ',
@@ -986,7 +979,6 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-
             'name' => 'Tai Nghe Rapoo VH310',
             'price' => 330000,
             'image' => ' ',
@@ -1056,6 +1048,354 @@ class ProductSeeder extends Seeder
             'BrandID' => $BrandCORSAIR->id,
         ]);
 
+
+        Product::create([
+            'name' => 'Adapter Laptop Asus 20V - 7.5A - 150W ĐTN 6.0 * 3.7 hàng zin',
+            'price' => 986000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKLT->id,
+            'BrandID' => $BrandASUS->id,
+        ]);
+        Product::create([
+            'name' => 'Pin HP 740 G2, 745 G2, 840 G1,G2 CM03XL (44WH-6cell)',
+            'price' => 1075000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKLT->id,
+            'BrandID' => $BrandHP->id,
+        ]);
+        Product::create([
+            'name' => 'Pin HP ProBook 430/ 440/ 450 G5/ 470 G4 / RR03XL (48Wh-3cell)',
+            'price' => 1200000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKLT->id,
+            'BrandID' => $BrandHP->id,
+        ]);
+        Product::create([
+            'name' => 'Pin laptop Dell Inspiron 15 7559/ 7567/ 357F9 (74WH)',
+            'price' => 1390000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKLT->id,
+            'BrandID' => $BrandDELL->id,
+        ]);
+        Product::create([
+            'name' => 'Adapter Laptop Acer 19V- 3.42A-65W | đầu nhỏ 3.0mm*1.1mm',
+            'price' => 480000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKLT->id,
+            'BrandID' => $BrandACER->id,
+        ]);
+        Product::create([
+            'name' => 'Adapter Laptop Acer 19V-3.42A-65W | Đầu 5.5mm*1.7 mm',
+            'price' => 455000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKLT->id,
+            'BrandID' => $BrandACER->id,
+        ]);
+        Product::create([
+            'name' => 'Adapter Laptop Lenoge Lenovo 20V - 2A',
+            'price' => 130000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKLT->id,
+            'BrandID' => $BrandLENOVO->id,
+        ]);
+        Product::create([
+            'name' => 'Adapter Laptop Lenoge Samsung 19V - 3.16A',
+            'price' => 130000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKLT->id,
+            'BrandID' => $BrandSAMSUNG->id,
+        ]);
+
+        Product::create([
+            'name' => 'Keycap Cooler Master SK650',
+            'price' => 99000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKGE->id,
+            'BrandID' => $BrandCOOLERMASTER->id,
+        ]);
+        Product::create([
+            'name' => 'Keycap ABS nhiều màu 104 phím (giao ngẫu nhiên)',
+            'price' => 135000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKGE->id,
+        ]);
+        Product::create([
+            'name' => 'Keycap Nút bàn phím 104 nút chất liệu PBT nhiều màu',
+            'price' => 185000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKGE->id,
+        ]);
+        Product::create([
+            'name' => 'Keycap Doubleshot xuyên Led cho Game thủ chuyên PUBG',
+            'price' => 85000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKGE->id,
+        ]);
+        Product::create([
+            'name' => 'Nút Click Chuột Thường',
+            'price' => 10000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKGE->id,
+        ]);
+        Product::create([
+            'name' => 'Giá treo Headphone (kèm Nút nguồn lớn)',
+            'price' => 115000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKGE->id,
+        ]);
+        Product::create([
+            'name' => 'Nút nguồn Fami Alienware kèm giá treo tai nghe',
+            'price' => 145000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKGE->id,
+        ]);
+        Product::create([
+            'name' => 'Giá treo Headphone Logo Star (kèm Nút nguồn lớn)',
+            'price' => 125000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKGE->id,
+        ]);
+        Product::create([
+            'name' => 'Giá treo Headphone Xiberia (Đen)',
+            'price' => 250000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKGE->id,
+        ]);
+        Product::create([
+            'name' => 'Keo tản nhiệt HY510 | Tuýp 20G',
+            'price' => 12000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKTN->id,
+        ]);
+        Product::create([
+            'name' => 'Keo tản nhiệt HY510 | Hủ 100G',
+            'price' => 52000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKTN->id,
+        ]);
+        Product::create([
+            'name' => 'Gông chống cong Magic - Dành CPU Socket 1700',
+            'price' => 89000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKTN->id,
+        ]);
+        Product::create([
+            'name' => 'Bộ Hub + Remote Fan RGB Coolmoon',
+            'price' => 89000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKTN->id,
+        ]);
+        Product::create([
+            'name' => 'Keo tản nhiệt Arctic MX4 8G (ACTCP00008B)',
+            'price' => 599000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKTN->id,
+        ]);
+        Product::create([
+            'name' => 'Cáp Riser Asus ROG Strix Cable | 240mm, PCI-E 3.0, hỗ trợ dựng VGA',
+            'price' => 450000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKVGA->id,
+            'BrandID' => $BrandASUS ->id,
+        ]);
+        Product::create([
+            'name' => 'Cáp Module Cooler Master PCIe 5.0 Cong 90 Độ (Type-2)',
+            'price' => 240000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKVGA->id,
+            'BrandID' => $BrandCOOLERMASTER ->id,
+        ]);
+        Product::create([
+            'name' => 'Giá đỡ VGA Coolmoon CM-GH 2 (Đen)',
+            'price' => 169000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKVGA->id,
+            'BrandID' => $BrandCOOLMOON ->id,
+        ]);
+        Product::create([
+            'name' => 'Dây Led Coolmoon C200EX + Dây nối dài EX24 24 pin màu trắng',
+            'price' => 430000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKVGA->id,
+            'BrandID' => $BrandCOOLMOON ->id,
+        ]);
+        Product::create([
+            'name' => 'Dây nguồn nối dài Lian Li Strimer Plus V2',
+            'price' => 1749000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKVGA->id,
+            'BrandID' => $BrandLLS ->id,
+        ]);
+        Product::create([
+            'name' => 'Khung dựng VGA Cooler Master V3 | Kèm Riser PCIE 4.0',
+            'price' => 1440000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKVGA->id,
+            'BrandID' => $BrandCOOLERMASTER->id,
+        ]);
+        Product::create([
+            'name' => 'Cáp DisplayPort qua DisplayPort 1.8m',
+            'price' => 55000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMH->id,
+
+        ]);
+        Product::create([
+            'name' => 'Cáp VGA ZIN 1.5m | Không nhiễu QSD',
+            'price' => 35000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMH->id,
+            'BrandID' => $BrandVGA->id,
+        ]);
+        Product::create([
+            'name' => 'Cáp HDMI 20M - Dây Dẹt',
+            'price' => 135000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMH->id,
+        ]);
+        Product::create([
+            'name' => 'Cáp VGA trắng 1.5m - 2 đầu xanh loại tốt',
+            'price' => 18000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMH->id,
+        ]);
+        Product::create([
+            'name' => 'Giá treo màn hình North Bayou F80 - Đen | 17 - 30 inch',
+            'price' => 329000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMH->id,
+        ]);
+        Product::create([
+            'name' => 'Giá treo màn hình North Bayou H180 - Xám | 17 - 27 inch',
+            'price' => 54000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMH->id,
+        ]);
+        Product::create([
+            'name' => 'Giá treo màn hình AOC AM400S - Silver | 17 - 34 inch',
+            'price' => 829000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMH->id,
+            'BrandID' => $BrandAOC->id,
+        ]);
+        Product::create([
+            'name' => 'Giá treo màn hình North Bayou FC55 - Đen | 24 - 35 inch',
+            'price' => 1790000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMH->id,
+        ]);
+        Product::create([
+            'name' => 'Cáp VGA Cao Cấp LCD Unitek Chống Nhiễu 5M YC505G',
+            'price' => 110000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMH->id,
+            'BrandID' => $BrandVGA->id,
+        ]);
+
+        Product::create([
+            'name' => 'Thanh Tản Nhiệt M.2 SSD NVMe Thermorysis',
+            'price' => 55000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKOC->id,
+        ]);
+
+        Product::create([
+            'name' => 'Cáp chuyển đổi nguồn Sata qua ATA (IDE)',
+            'price' => 15000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKOC->id,
+        ]);
+
+        Product::create([
+            'name' => 'Cáp Sata dài 85cm Foxconn (Sata Drive/Server Board) (QSD)',
+            'price' => 10000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKOC->id,
+        ]);
+        Product::create([
+            'name' => 'Caddy Bay Mỏng 9.5mm (Lắp thay SSD cho Laptop)',
+            'price' => 37000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKOC->id,
+        ]);
+        Product::create([
+            'name' => 'Caddy Bay Dày 12.5mm (Lắp thay SSD cho Laptop)',
+            'price' => 37000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKOC->id,
+        ]);
+
+        Product::create([
+            'name' => 'Cáp Mạng Đúc Sẵn 1.5M Kingmaster',
+            'price' => 9000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMG->id,
+            'BrandID' =>$BrandKINGMASTER->id,
+        ]);
+        Product::create([
+            'name' => 'Cáp Lan đúc sẵn 5M loại tốt Kingmaster',
+            'price' => 25000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMG->id,
+            'BrandID' =>$BrandKINGMASTER->id,
+        ]);
+        Product::create([
+            'name' => 'Cáp Lan đúc sẵn 2M loại tốt Kingmaster',
+            'price' => 11000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMG->id,
+            'BrandID' =>$BrandKINGMASTER->id,
+        ]);
+        Product::create([
+            'name' => 'Cáp Lan đúc sẵn 3M loại tốt Kingmaster',
+            'price' => 15000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMG->id,
+            'BrandID' =>$BrandKINGMASTER->id,
+        ]);
+        Product::create([
+            'name' => 'Cáp Lan đúc sẵn 25M loại tốt Kingmaster',
+            'price' => 80000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMG->id,
+            'BrandID' =>$BrandKINGMASTER->id,
+        ]);
+        Product::create([
+            'name' => 'Card PCIE Wifi 6 Asus PCE-AX3000 (No Box)',
+            'price' => 639000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMG->id,
+            'BrandID' =>$BrandASUS->id,
+        ]);
+        Product::create([
+            'name' => 'Hộp đầu mạng RJ45 Tenda 5E (100c/hộp)',
+            'price' => 95000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMG->id,
+            'BrandID' =>$BrandTENDA->id,
+        ]);
+        Product::create([
+            'name' => 'Card Mạng Không Dây TP-Link TL-WN781ND',
+            'price' => 160000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMG->id,
+
+        ]);
+        Product::create([
+            'name' => 'Router Wifi Asus RT AX53U AX1800',
+            'price' => 1279000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMG->id,
+            'BrandID' =>$BrandASUS->id,
+        ]);
+        Product::create([
+            'name' => 'Router Wifi Asus RT AX1800HP',
+            'price' => 1390000,
+            'image' => ' ',
+            'CategoryID' =>$CategoryPKMG->id,
+            'BrandID' =>$BrandASUS->id,
+        ]);
+
         Product::create([
 
             'name' => 'Ghế Gaming E-Dra Yummy EGC232 V2-Đen',
@@ -1083,32 +1423,6 @@ class ProductSeeder extends Seeder
             'BrandID' => $BrandEDRA->id,
         ]);
 
-        Product::create([
-
-            'name' => 'Ghế Gaming Cooler Master Caliber R3',
-            'price' => 4000000,
-            'image' => ' ',
-            'CategoryID' =>$CategoryGHE->id,
-            'BrandID' => $BrandCOOLERMASTER->id,
-        ]);
-
-        Product::create([
-
-            'name' => 'Ghế Gaming Corsair TC100 RELAXED Leatherette',
-            'price' => 4100000,
-            'image' => ' ',
-            'CategoryID' =>$CategoryGHE->id,
-            'BrandID' => $BrandCORSAIR->id,
-        ]);
-
-        Product::create([
-
-            'name' => 'Ghế Gaming E-Dra Nemesis EGC221-Trắng',
-            'price' => 4290000,
-            'image' => ' ',
-            'CategoryID' =>$CategoryGHE->id,
-            'BrandID' => $BrandEDRA->id,
-        ]);
 
         Product::create([
 
@@ -1145,5 +1459,7 @@ class ProductSeeder extends Seeder
             'CategoryID' =>$CategoryGHE->id,
             'BrandID' => $BrandCORSAIR->id,
         ]);
+
+
     }
 }
