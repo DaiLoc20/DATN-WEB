@@ -35,5 +35,16 @@ class BrandSeeder extends Seeder
       Brand::create(['name'=>'E-Dra']);
       Brand::create(['name'=>'VSP']);
       Brand::create(['name'=>'AMD']);
+      Brand::create(['name'=>'WESTERN']);
+      Brand::create(['name'=>'ASROCK']);
+      Brand::create(['name'=>'XIGMATEK']);
+      Brand::create(['name'=>'REDMOON']);
+      Brand::create(['name'=>'COOLER MASTER']);
+      Brand::create(['name'=>'Dare-U']);
+      Brand::create(['name'=>'Rapoo']);
+      Brand::create(['name'=>'Akko']);
+      Brand::create(['name'=>'Logitech']);
+      Brand::create(['name'=>'Fuhlen']);
+      Brand::create(['name'=>'Razer']);
     }
 }
