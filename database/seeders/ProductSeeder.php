@@ -3,7 +3,9 @@
 namespace Database\Seeders;
 use App\Models\Category;
 use App\Models\Brand;
+use App\Models\Fillter;
 use App\Models\Product;
+use Fiber;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -91,6 +93,102 @@ class ProductSeeder extends Seeder
 
 
         //Fillter
+        $FillterD10 = Fillter::where('name','Dưới 10 triệu')->first();
+        $FillterD1015 = Fillter::where('name','Từ 10 đến 15 triệu')->first();
+        $FillterD2025 = Fillter::where('name','Từ 20 đến 25 triệu')->first();
+        $FillterD2535 = Fillter::where('name','Từ 25 đến 35 triệu')->first();
+        $FillterD3545 = Fillter::where('name','Từ 35 đến 45 triệu')->first();
+        $FillterD4560 = Fillter::where('name','Từ 45 đến 60 triệu')->first();
+
+        $Fillter60HZ= Fillter::where('name','60Hz')->first();
+        $Fillter75HZ= Fillter::where('name','75Hz')->first();
+        $Fillter100HZ= Fillter::where('name','100Hz')->first();
+        $Fillter120HZ= Fillter::where('name','120Hz')->first();
+        $Fillter144HZ= Fillter::where('name','144Hz')->first();
+        $Fillter165HZ= Fillter::where('name','165Hz')->first();
+        $Fillter240HZ= Fillter::where('name','240Hz')->first();
+
+        $FillterHD1= Fillter::where('name','HD')->first();
+        $FillterHD2= Fillter::where('name','HD+')->first();
+        $FillterHD3= Fillter::where('name','Full HD')->first();
+        $FillterHD4= Fillter::where('name','2.8K')->first();
+        $FillterHD5= Fillter::where('name','4K')->first();
+        $FillterHD6= Fillter::where('name','Độ phân giải khác')->first();
+
+        $Fillter4GB= Fillter::where('name','4GB')->first();
+        $Fillter8GB= Fillter::where('name','8GB')->first();
+        $Fillter16GB= Fillter::where('name','16GB')->first();
+        $Fillter32GB= Fillter::where('name','32GB')->first();
+        $FillterTr32GB= Fillter::where('name','Trên 32GB')->first();
+
+        $FillterCPUINTEL= Fillter::where('name','CPU INTEL')->first();
+        $FillterCPUAMD= Fillter::where('name','CPU AMD')->first();
+        $FillterINTERCELERON= Fillter::where('name','INTEL CELERON')->first();
+        $FillterINTERPENTIUM= Fillter::where('name','INTEL PENTIUM')->first();
+        $FillterCOREI3= Fillter::where('name','Core i3')->first();
+        $FillterCOREI5= Fillter::where('name','Core i5')->first();
+        $FillterCOREI7= Fillter::where('name','Core i7')->first();
+        $FillterCOREI9= Fillter::where('name','Core i9')->first();
+        $FillterRYZEN3= Fillter::where('name','Ryzen 3')->first();
+        $FillterRYZEN5= Fillter::where('name','Ryzen 5')->first();
+        $FillterRYZEN7= Fillter::where('name','Ryzen 7')->first();
+
+        $FillterGEN10TH= Fillter::where('name','PC Intel Gen10th')->first();
+        $FillterGEN11TH= Fillter::where('name','PC Intel Gen11th')->first();
+        $FillterGEN12TH= Fillter::where('name','PC Intel Gen12th')->first();
+        $FillterGEN13TH= Fillter::where('name','PC Intel Gen13th')->first();
+
+        $FillterVPHONG= Fillter::where('name','Văn Phòng')->first();
+        $FillterGAMING= Fillter::where('name','Gaming')->first();
+        $FillterDOHOA= Fillter::where('name','Đồ Hoạ')->first();
+
+
+        $Fillter128GB= Fillter::where('name','128GB')->first();
+        $Fillter240GB= Fillter::where('name','240GB')->first();
+        $Fillter256GB= Fillter::where('name','256GB')->first();
+        $Fillter360GB= Fillter::where('name','360GB')->first();
+        $Fillter480GB= Fillter::where('name','480GB')->first();
+        $Fillter500GB= Fillter::where('name','500GB')->first();
+        $Fillter512GB= Fillter::where('name','512GB')->first();
+        $Fillter1TB= Fillter::where('name','1TB')->first();
+        $Fillter2TB= Fillter::where('name','2TB')->first();
+        $Fillter4TB= Fillter::where('name','4TB')->first();
+
+
+        $Fillter05MS= Fillter::where('name','0.5ms (GTG)')->first();
+        $Fillter1MS= Fillter::where('name','1ms (GTG)')->first();
+        $Fillter2MS= Fillter::where('name','2ms (GTG)')->first();
+        $Fillter4MS= Fillter::where('name','4ms (GTG)')->first();
+        $Fillter5MS= Fillter::where('name','5ms (GTG)')->first();
+        $Fillter8MS= Fillter::where('name','8ms (GTG)')->first();
+        $Fillter10MS= Fillter::where('name','10ms (GTG)')->first();
+        $Fillter12MS= Fillter::where('name','12ms (GTG)')->first();
+
+        $FillterIPS= Fillter::where('name','IPS')->first();
+        $FillterPLS= Fillter::where('name','PLS')->first();
+        $FillterVA= Fillter::where('name','VA')->first();
+        $FillterTN= Fillter::where('name','TN')->first();
+
+        $Fillter116= Fillter::where('name','11.6 inch')->first();
+        $Fillter123= Fillter::where('name','12.3 inch')->first();
+        $Fillter124= Fillter::where('name','12.4 inch')->first();
+        $Fillter125= Fillter::where('name','12.5 inch')->first();
+        $Fillter130= Fillter::where('name','13 inch')->first();
+        $Fillter133= Fillter::where('name','13.3 inch')->first();
+        $Fillter134= Fillter::where('name','13.4 inch')->first();
+        $Fillter135= Fillter::where('name','13.5 inch')->first();
+        $Fillter140= Fillter::where('name','14 inch')->first();
+        $Fillter145= Fillter::where('name','14.5 inch')->first();
+        $Fillter150= Fillter::where('name','15 inch')->first();
+        $Fillter156= Fillter::where('name','15.6 inch')->first();
+        $Fillter160= Fillter::where('name','16 inch')->first();
+        $Fillter170= Fillter::where('name','17 inch')->first();
+        $Fillter173= Fillter::where('name','17.3 inch')->first();
+        $Fillter220= Fillter::where('name','22 inch')->first();
+        $Fillter240= Fillter::where('name','24 inch')->first();
+        $Fillter270= Fillter::where('name','27 inch')->first();
+        $Fillter320= Fillter::where('name','32 inch')->first();
+        $Fillter340= Fillter::where('name','34 inch')->first();
 
         //Fillter
         Product::create([
