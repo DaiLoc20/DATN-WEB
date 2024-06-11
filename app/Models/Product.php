@@ -12,6 +12,7 @@ class Product extends Model
     use SoftDeletes;
 
     protected $guarded=[];
+
     public function category()
     {
         return $this->belongsTo(Category::class);
@@ -21,6 +22,9 @@ class Product extends Model
     {
         return $this->belongsTo(Brand::class);
     }
-
+    public function filters()
+    {
+        return $this->hasMany(Fillter::class);
+    }
 
 }

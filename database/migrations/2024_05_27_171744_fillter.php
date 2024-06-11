@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name',50);
             $table->unsignedBigInteger('parent_id')->nullable();
             $table->foreign('parent_id')->references('id')->on('fillters')->onDelete('cascade');
+            $table->unsignedBigInteger('ProductID')->nullable();
+            $table->foreign('ProductID')->references('id')->on('products')->onDelete('cascade');
             $table->timestamps();
         });
     }

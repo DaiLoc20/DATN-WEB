@@ -48,14 +48,6 @@ class CategorySeeder extends Seeder
             ['name'=>'Phụ kiện Mạng'],
         ]);
         //Thuộc Phụ kiện
-        //Thuộc Phím Chuột Tai Nghe
-        $parentPCT =  Category::create(['name'=>'Phím, Chuột, Tai Nghe']);
-        $parentPCT->children()->createMany([
-            ['name'=>'Phím'],
-            ['name'=>'Chuột'],
-            ['name'=>'Tai Nghe'],
-        ]);
-        //Thuộc Phím Chuột Tai Nghe
-        Category::create(['name'=>'Ghế Gaming']);
+
     }
 }

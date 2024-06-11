@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Fillter;
-use App\Models\Product;
+
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -16,8 +16,18 @@ class FillterSeeder extends Seeder
     {
         $parentGIA = Fillter::create(['name'=>'Giá']);
         $parentGIA->children()->createMany([
-            ['name'=>'Dưới 10 triệu'],
-            ['name'=>'Từ 10 đến 15 triệu'],
+            ['name'=>'Dưới 10 triệu','ProductID'=> 1 ],
+            ['name'=>'Dưới 10 triệu','ProductID'=> 12 ],
+            ['name'=>'Từ 10 đến 20 triệu','ProductID'=> 2],
+            ['name'=>'Từ 10 đến 20 triệu','ProductID'=> 3],
+            ['name'=>'Từ 10 đến 20 triệu','ProductID'=> 4],
+            ['name'=>'Từ 10 đến 20 triệu','ProductID'=> 5],
+            ['name'=>'Từ 10 đến 20 triệu','ProductID'=> 6],
+            ['name'=>'Từ 10 đến 20 triệu','ProductID'=> 7],
+            ['name'=>'Từ 10 đến 20 triệu','ProductID'=> 8],
+            ['name'=>'Từ 10 đến 20 triệu','ProductID'=> 9],
+            ['name'=>'Từ 10 đến 20 triệu','ProductID'=> 10],
+            ['name'=>'Từ 10 đến 20 triệu','ProductID'=> 11],
             ['name'=>'Từ 20 đến 25 triệu'],
             ['name'=>'Từ 25 đến 35 triệu'],
             ['name'=>'Từ 35 đến 45 triệu'],
@@ -49,7 +59,7 @@ class FillterSeeder extends Seeder
         $parentRAM = Fillter::create(['name'=>'RAM']);
         $parentRAM->children()->createMany([
             ['name'=>'4GB'],
-            ['name'=>'8GB'],
+            ['name'=>'8GB','ProductID'=>1],
             ['name'=>'16GB'],
             ['name'=>'32GB'],
             ['name'=>'Trên 32GB'],
@@ -62,7 +72,10 @@ class FillterSeeder extends Seeder
             ['name'=>'CPU AMD'],
             ['name'=>'INTEL CELERON'],
             ['name'=>'INTEL PENTIUM'],
-            ['name'=>'Core i3'],
+            ['name'=>'Core i3',
+             'ProductID'=> 1
+
+            ],
             ['name'=>'Core i5'],
             ['name'=>'Core i7'],
             ['name'=>'Core i9'],
@@ -73,7 +86,7 @@ class FillterSeeder extends Seeder
 
         $parentTHEHECPU = Fillter::create(['name'=>'Thế hệ CPU']);
         $parentTHEHECPU->children()->createMany([
-            ['name'=>'PC Intel Gen10th'],
+            ['name'=>'PC Intel Gen10th','ProductID'=> 1],
             ['name'=>'PC Intel Gen11th'],
             ['name'=>'PC Intel Gen12th'],
             ['name'=>'PC Intel Gen13th'],
@@ -82,7 +95,7 @@ class FillterSeeder extends Seeder
         $parentNHUCAU= Fillter::create(['name'=>'Theo nhu cầu']);
         $parentNHUCAU->children()->createMany([
             ['name'=>'Văn Phòng'],
-            ['name'=>'Gaming'],
+            ['name'=>'Gaming','ProductID'=> 1 ],
             ['name'=>'Đồ Hoạ'],
         ]);
 

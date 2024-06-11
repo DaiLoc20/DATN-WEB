@@ -18,12 +18,10 @@ return new class extends Migration
             $table->string('image',255);
             $table->unsignedBigInteger('CategoryID')->nullable();
             $table->unsignedBigInteger('BrandID')->nullable();
-            $table->unsignedBigInteger('FillterID')->nullable();
             $table->timestamps();
 
             $table->foreign('CategoryID')->references('id')->on('categories');
             $table->foreign('BrandID')->references('id')->on('brands');
-            $table->foreign('FillterID')->references('id')->on('fillters');
         });
     }
 
