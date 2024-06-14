@@ -156,8 +156,94 @@ class FillterSeeder extends Seeder
             ['name'=>'34 inch'],
         ]);
 
+        $parentHANG = Fillter::create(['name'=>'Hãng']);
+        $parentHANG->children()->createMany([
+            ['name'=>'ASUS'],
+            ['name'=>'ACER'],
+            ['name'=>'DELL'],
+            ['name'=>'HP'],
+            ['name'=>'MSI'],
+            ['name'=>'LENOVO'],
+            ['name'=>'GIGABYTE'],
+            ['name'=>'KINGMAX'],
+            ['name'=>'KINGFAST'],
+            ['name'=>'KINGSTON'],
+            ['name'=>'INTEL'],
+            ['name'=>'SAMSUNG'],
+            ['name'=>'ADATA'],
+            ['name'=>'CORSAIR'],
+            ['name'=>'COLORFULL'],
+            ['name'=>'VGA NVIDIA'],
+            ['name'=>'VGA AMD'],
+            ['name'=>'VIEWSONIC'],
+            ['name'=>'AOC'],
+            ['name'=>'E-DRA'],
+            ['name'=>'VSP'],
+            ['name'=>'AMD'],
+            ['name'=>'WESTERN'],
+            ['name'=>'ASROCK'],
+            ['name'=>'XIGMATEK'],
+            ['name'=>'REDMOON'],
+            ['name'=>'COOLER MASTER'],
+            ['name'=>'Dare-U'],
+            ['name'=>'Rapoo'],
+            ['name'=>'Akko'],
+            ['name'=>'Logitech'],
+            ['name'=>'Fuhlen'],
+            ['name'=>'Razer'],
+            ['name'=>'COOLMOON'],
+            ['name'=>'KINGMASTER'],
+            ['name'=>'TENDA'],
 
+        ]);
 
+        $parentPKLT = Fillter::create(['name'=>'Phụ kiện laptop']);
+        $parentPKLT->children()->createMany([
+            ['name'=>'Ba lô & túi'],
+            ['name'=>'Đế tản nhiệt'],
+            ['name'=>'Bộ vệ sinh'],
+            ['name'=>'Pin & Adapter'],
+        ]);
 
+        $parentPKG = Fillter::create(['name'=>'Phụ kiện gear']);
+        $parentPKG->children()->createMany([
+            ['name'=>'Keycap'],
+            ['name'=>'Nút lick chuột'],
+            ['name'=>'Nút nguồn'],
+            ['name'=>'Giá đỡ tai nghe'],
+        ]);
+
+        $parentPKTN = Fillter::create(['name'=>'Phụ kiện tản nhiệt']);
+        $parentPKTN->children()->createMany([
+            ['name'=>'Keo tản nhiệt'],
+            ['name'=>'Gong socket'],
+            ['name'=>'Hub điều khiển'],
+        ]);
+
+        $parentPKVGAN = Fillter::create(['name'=>'Phụ kiện VGA & Nguồn']);
+        $parentPKVGAN->children()->createMany([
+            ['name'=>'Giá đỡ VGA'],
+            ['name'=>'Cáp nguồn nối dài'],
+        ]);
+
+        $parentPKMH = Fillter::create(['name'=>'Phụ kiện màn hình']);
+        $parentPKMH->children()->createMany([
+            ['name'=>'Chân màn hình'],
+            ['name'=>'Cáp màn hình'],
+        ]);
+
+        $parentPKOC = Fillter::create(['name'=>'Phụ kiện ổ cứng']);
+        $parentPKOC->children()->createMany([
+            ['name'=>'Caddy Bay'],
+            ['name'=>'Thanh tản nhiệt'],
+            ['name'=>'Cáp sata'],
+        ]);
+
+        $parentPKM = Fillter::create(['name'=>'Phụ kiện mạng']);
+        $parentPKM->children()->createMany([
+            ['name'=>'Đầu mạng'],
+            ['name'=>'Cáp mạng'],
+            ['name'=>'Card mạng'],
+        ]);
     }
 }
