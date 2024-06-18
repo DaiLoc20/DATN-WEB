@@ -4,7 +4,7 @@ namespace Database\Seeders;
 use App\Models\Category;
 use App\Models\Brand;
 use App\Models\Product;
-use App\Models\Fillter;
+
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -83,7 +83,7 @@ class ProductSeeder extends Seeder
         $BrandLLS = Brand::where('name','LianLiStrimer')->first();
         $BrandVGA = Brand::where('name','VGA')->first();
         $BrandKINGMASTER = Brand::where('name','KINGMASTER')->first();
-        $BrandTENDA = Brand::where('name',' ')->first();
+        $BrandTENDA = Brand::where('name','TENDA')->first();
         //Brand
 
        Product::create([
@@ -167,7 +167,7 @@ class ProductSeeder extends Seeder
 
             'name' => 'Laptop Asus Vivobook X1605VA MB105W',
             'price' => 14890000,'image' => ' ','CategoryID' =>$CategoryLaptop->id,'BrandID' => $BrandASUS->id,
-            
+
         ]);
 
         Product::create([
@@ -721,7 +721,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Cáp Lan đúc sẵn 5M loại tốt Kingmaster',
-            'price' => 25000,'image' => ' ','ryIDCatego' =>$CategoryPKMG->id,'BrandID' =>$BrandKINGMASTER->id,
+            'price' => 25000,'image' => ' ','CategoryID' =>$CategoryPKMG->id,'BrandID' =>$BrandKINGMASTER->id,
         ]);
         Product::create([
             'name' => 'Cáp Lan đúc sẵn 2M loại tốt Kingmaster',
