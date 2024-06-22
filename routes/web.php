@@ -5,6 +5,6 @@ use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('/products');
+    return view('/User/Home/');
 });
-Route::resource('/products',ProductController::class);
+Route::resource('/Home',ProductController::class);
